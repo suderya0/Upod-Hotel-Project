@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.Services">
+   <children>
+      <TableView fx:id="service_table" layoutX="72.0" layoutY="72.0" prefHeight="255.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="service_id_column" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="service_name_column" prefWidth="102.0" text="Service Name" />
+            <TableColumn fx:id="service_price_column" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="save_button" layoutX="406.0" layoutY="219.0" mnemonicParsing="false" style="-fx-background-color: #219C90;" text="Save" />
+      <TextField fx:id="service_name_field" layoutX="357.0" layoutY="122.0" promptText="Service Name" />
+      <TextField fx:id="service_id_field" layoutX="357.0" layoutY="88.0" promptText="Service ID" />
+      <Button fx:id="come_back_home_page" layoutX="17.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: ECF9FF;" text="Back" />
+      <Button fx:id="delete_service_button" layoutX="407.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: #EE9322;" text="Delete" />
+      <TextField fx:id="delete_service" layoutX="352.0" layoutY="281.0" promptText="ID" />
+      <TextField fx:id="service_price_field" layoutX="358.0" layoutY="166.0" promptText="Price" />
+   </children>
+</AnchorPane>

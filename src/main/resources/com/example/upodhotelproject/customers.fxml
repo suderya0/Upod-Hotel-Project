@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.0" prefWidth="763.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.Customers">
+    <children>
+        <TableView fx:id="customer_table" editable="true" layoutX="82.0" layoutY="81.0" onMouseClicked="#getSelected" prefHeight="292.0" prefWidth="424.0">
+            <columns>
+                <TableColumn fx:id="column_customer_id" prefWidth="32.79998779296875" text="ID" />
+                <TableColumn fx:id="column_customer_fullname" prefWidth="67.20001220703125" text="Name" />
+                <TableColumn fx:id="column_identity_number" prefWidth="95.60000610351562" text="İdentity" />
+                <TableColumn fx:id="column_customer_phone_number" prefWidth="71.59999084472656" text="Phone" />
+                <TableColumn fx:id="column_customer_birthdate" prefWidth="75.20001220703125" text="Birth Date" />
+                <TableColumn fx:id="column_customer_description" prefWidth="81.4000244140625" text="Description" />
+            </columns>
+        </TableView>
+        <TextField fx:id="customer_full_name" layoutX="527.0" layoutY="68.0" promptText="full name" />
+        <TextField fx:id="customer_identitiy_number" layoutX="527.0" layoutY="112.0" promptText="identitiy" />
+        <TextField fx:id="customer_phone_number" layoutX="526.0" layoutY="156.0" promptText="phone number" />
+        <TextField fx:id="customer_Description" layoutX="527.0" layoutY="247.0" promptText="description" />
+        <DatePicker fx:id="customer_birth_Date" layoutX="527.0" layoutY="201.0" prefHeight="26.0" prefWidth="150.0" promptText="birth date" />
+        <TextField fx:id="customer_id" layoutX="530.0" layoutY="360.0" prefHeight="26.0" prefWidth="76.0" promptText="cust id" />
+        <Button fx:id="customer_Save_button" layoutX="527.0" layoutY="287.0" mnemonicParsing="false" style="-fx-background-color: #EE9322;" text="Save" />
+        <Button fx:id="customer_delete_button" layoutX="623.0" layoutY="360.0" mnemonicParsing="false" style="-fx-background-color: #D83F31;" text="Delete" />
+        <Button fx:id="customer_table_refresh" layoutX="403.0" layoutY="42.0" mnemonicParsing="false" text="Refresh Table" />
+        <Button fx:id="come_back_home_page" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ECF9FF;" text="Back" />
+        <Button fx:id="customer_update_button" layoutX="621.0" layoutY="287.0" mnemonicParsing="false" onAction="#Edit" style="-fx-background-color: #219C90;" text="Update" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.Features">
+    <children>
+        <TableView fx:id="feature_table" layoutX="97.0" layoutY="59.0" prefHeight="243.0" prefWidth="246.0">
+            <columns>
+                <TableColumn fx:id="column_feature_id" prefWidth="29.199979782104492" text="id" />
+                <TableColumn fx:id="column_feature_name" prefWidth="216.00001373291016" text="Feature Name" />
+            </columns>
+        </TableView>
+        <Button fx:id="feature_save_button" layoutX="417.0" layoutY="146.0" mnemonicParsing="false" style="-fx-background-color: #EE9322;" text="Save" />
+        <Button fx:id="feature_delete_button" layoutX="418.0" layoutY="270.0" mnemonicParsing="false" style="-fx-background-color: #219C90;" text="Delete" />
+        <TextField fx:id="feature_name_field" layoutX="369.0" layoutY="102.0" promptText="Feature Name" />
+        <TextField fx:id="feature_id_field" layoutX="369.0" layoutY="216.0" promptText="Feature ID" />
+        <TextField fx:id="feature_id_for_save" layoutX="369.0" layoutY="59.0" promptText="Feature ID" />
+        <Button fx:id="come_back_home_page" layoutX="27.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ECF9FF;" text="Back" />
+    </children>
+</AnchorPane>

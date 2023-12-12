@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.Rooms">
+    <children>
+        <TableView fx:id="rooms_table" layoutX="55.0" layoutY="55.0" onMouseClicked="#getSelected" prefHeight="200.0" prefWidth="304.0">
+            <columns>
+                <TableColumn fx:id="column_room_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="column_room_name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="column_room_capacity" prefWidth="75.0" text="Capacity" />
+                <TableColumn fx:id="column_room_price" prefWidth="75.0" text="Price" />
+            </columns>
+        </TableView>
+        <TextField fx:id="room_name_ID" layoutX="380.0" layoutY="55.0" promptText="ID" />
+        <TextField fx:id="room_name_field" layoutX="380.0" layoutY="97.0" promptText="Name" />
+        <TextField fx:id="room_capacity_field" layoutX="380.0" layoutY="142.0" promptText="Capacity" />
+        <TextField fx:id="room_price_field" layoutX="380.0" layoutY="187.0" promptText="Price" />
+        <TextField fx:id="room_id_field" layoutX="16.0" layoutY="354.0" prefHeight="26.0" prefWidth="50.0" promptText="ID for Delete" />
+        <Button fx:id="room_save_button" layoutX="380.0" layoutY="268.0" mnemonicParsing="false" style="-fx-background-color: #219C90;" text="Save" />
+        <Button fx:id="delete_room_button" layoutX="86.0" layoutY="354.0" mnemonicParsing="false" onAction="#deleteRoom" style="-fx-background-color: #D83F31;" text="Delete" />
+        <Button fx:id="come_back_home_page" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ECF9FF;" text="Back" />
+        <Button layoutX="464.0" layoutY="268.0" mnemonicParsing="false" onAction="#Edit" style="-fx-background-color: #EE9322;" text="Update" />
+      <ComboBox fx:id="room_feature_combobox" layoutX="380.0" layoutY="223.0" prefWidth="150.0" style="-fx-background-color: F5F5F5;" />
+      <Button fx:id="add_new_features_button" layoutX="398.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #E9B824;" text="Add New Features" />
+
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.AddFeatureToRooms">
+   <children>
+      <TableView fx:id="room_feature_table" layoutX="117.0" layoutY="34.0" prefHeight="315.0" prefWidth="182.0">
+        <columns>
+          <TableColumn fx:id="room_id_for_feature" prefWidth="62.80000114440918" text="Room ID" />
+          <TableColumn fx:id="feature_name" prefWidth="119.60001373291016" text="Feature" />
+        </columns>
+      </TableView>
+      <TextField fx:id="room_id_text_field" layoutX="355.0" layoutY="93.0" promptText="Room ID" />
+      <ComboBox fx:id="feature_names_combobox" layoutX="355.0" layoutY="152.0" prefWidth="150.0" promptText="Select Feature" style="-fx-background-color: #F5F5F5;" />
+       <Button fx:id="save_button" layoutX="356.0" layoutY="213.0" mnemonicParsing="false" onAction="#saveButton" style="-fx-background-color: #219C90;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+       <Button fx:id="delete_button" layoutX="455.0" layoutY="213.0" mnemonicParsing="false" onAction="#deleteButton" style="-fx-background-color: #EE9322;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="come_back_rooms_page" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #FFFBEB; -fx-border-color: #ffd000; -fx-border-radius: 50; -fx-border-width: 5;" text="Back" textFill="#666666">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

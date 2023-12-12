@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.Bills">
+   <children>
+      <TableView fx:id="bill_table" layoutX="113.0" layoutY="46.0" prefHeight="308.0" prefWidth="198.0">
+        <columns>
+          <TableColumn fx:id="bilss_cust_id_column" prefWidth="129.40001487731934" text="Customer Identity" />
+          <TableColumn fx:id="bills_bill_column" prefWidth="68.19998168945312" text="Bill" />
+        </columns>
+      </TableView>
+      <Button fx:id="add_service_button" layoutX="373.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: #219C90;" text="Add Service" textFill="WHITE" />
+      <TextField fx:id="bills_service_id" layoutX="338.0" layoutY="154.0" promptText="Service ID" />
+      <TextField fx:id="bills_cust_id_field" layoutX="338.0" layoutY="107.0" promptText="Cust Identity" />
+      <Button fx:id="come_back_home_page" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #ECF9FF;" text="Back" />
+   </children>
+</AnchorPane>

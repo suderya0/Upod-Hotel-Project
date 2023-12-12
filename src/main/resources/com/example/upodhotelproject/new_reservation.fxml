@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFBEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upodhotelproject.NewReservation">
+    <children>
+        <DatePicker fx:id="new_res_check_in" layoutX="284.0" layoutY="67.0" promptText="check-in" />
+        <DatePicker fx:id="new_res_check_out" layoutX="284.0" layoutY="104.0" promptText="check-out" />
+        <TableView fx:id="new_res_room_table" layoutX="119.0" layoutY="41.0" prefHeight="294.0" prefWidth="109.0">
+            <columns>
+                <TableColumn fx:id="column_avaliablerooms" prefWidth="108.19999504089355" text="Avaliable Rooms" />
+            </columns>
+        </TableView>
+        <TextField fx:id="new_res_room_id_field" layoutX="297.0" layoutY="200.0" promptText="Room ID" />
+        <TextField fx:id="new_res_customer_field" layoutX="297.0" layoutY="243.0" promptText="Customer" />
+        <Button fx:id="new_res_save_button" layoutX="352.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #219C90;" text="Save" />
+        <Button fx:id="new_res_search_button" layoutX="346.0" layoutY="147.0" mnemonicParsing="false" onAction="#searchAvaliableRoom" style="-fx-background-color: #EE9322;" text="Search" />
+        <Button fx:id="come_back_home_page" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: #ECF9FF;" text="Back" />
+      <TextField fx:id="home_page_cust_id_field" layoutX="297.0" layoutY="284.0" promptText="Cust ID" />
+    </children>
+</AnchorPane>
